@@ -1,4 +1,4 @@
-Opening monitor command playback file: C:\Users\Seb\Documents\C64\Tutorials\Joystick01/bin/main.vs
+Opening monitor command playback file: C:\Users\Seb\Documents\C64\Tutorials\Joystick01/bin/joystickSprite.vs
 archdep_register_cbmfont(): Registering CBM fonts using Pango 1.54.0
 succesfully registered 1 font(s) from C:\C64\Tools\GTK3VICE-3.9-win64\bin\..\common\C64_Pro_Mono-STYLE.ttf.
 succesfully registered 1 font(s) from C:\C64\Tools\GTK3VICE-3.9-win64\bin\..\common\PetMe1282Y.ttf.
@@ -23,8 +23,8 @@ Roberto Muscedere, June Tate-Gans, Pablo Roldan.
 This is free software with ABSOLUTELY NO WARRANTY.
 See the "About VICE" command for more info.
  
-Main: random seed was: 0x69fda8c9
-Main: command line was: x64sc -logfile C:\Users\Seb\Documents\C64\Tutorials\Joystick01/bin/main_ViceLog.txt -moncommands C:\Users\Seb\Documents\C64\Tutorials\Joystick01/bin/main.vs C:\Users\Seb\Documents\C64\Tutorials\Joystick01/bin/main.prg
+Main: random seed was: 0x69fdab93
+Main: command line was: x64sc -logfile C:\Users\Seb\Documents\C64\Tutorials\Joystick01/bin/joystickSprite_ViceLog.txt -moncommands C:\Users\Seb\Documents\C64\Tutorials\Joystick01/bin/joystickSprite.vs C:\Users\Seb\Documents\C64\Tutorials\Joystick01/bin/joystickSprite.prg
 Main: VICE system file directory: 'C:\C64\Tools\GTK3VICE-3.9-win64\bin\..'.
 Main: VICE system file search path: 'C:\C64\Tools\GTK3VICE-3.9-win64\bin;C:\C64\Tools\GTK3VICE-3.9-win64\bin\..'.
 Loading system file `C:\C64\Tools\GTK3VICE-3.9-win64\bin\..\C64\kernal-901227-03.bin'.
@@ -79,46 +79,46 @@ Hotkeys: OK.
 Main CPU: 
 Main CPU: starting at ($FFFC).
 Main CPU: RESET.
-VIC-II: VSP Bug: safe channels are: 0567. Emulation of memory corruption is disabled.
-AUTOSTART: Autodetecting image type of `C:\Users\Seb\Documents\C64\Tutorials\Joystick01/bin/main.prg'.
+VIC-II: VSP Bug: safe channels are: 0237. Emulation of memory corruption is disabled.
+AUTOSTART: Autodetecting image type of `C:\Users\Seb\Documents\C64\Tutorials\Joystick01/bin/joystickSprite.prg'.
 Filesystem Image Probe: Error - Import GCR: Unknown GCR image version 48.
-Filesystem Image: Unknown disk image `C:\Users\Seb\Documents\C64\Tutorials\Joystick01/bin/main.prg'.
-Tape: Error - Cannot open file `C:\Users\Seb\Documents\C64\Tutorials\Joystick01/bin/main.prg'
+Filesystem Image: Unknown disk image `C:\Users\Seb\Documents\C64\Tutorials\Joystick01/bin/joystickSprite.prg'.
+Tape: Error - Cannot open file `C:\Users\Seb\Documents\C64\Tutorials\Joystick01/bin/joystickSprite.prg'
 Error - no CRT header found.
-CART: 'C:\Users\Seb\Documents\C64\Tutorials\Joystick01/bin/main.prg' is not a valid CRT file.
-AUTOSTART: Loading PRG file `C:\Users\Seb\Documents\C64\Tutorials\Joystick01/bin/main.prg' with autostart disk image.
+CART: 'C:\Users\Seb\Documents\C64\Tutorials\Joystick01/bin/joystickSprite.prg' is not a valid CRT file.
+AUTOSTART: Loading PRG file `C:\Users\Seb\Documents\C64\Tutorials\Joystick01/bin/joystickSprite.prg' with autostart disk image.
 AUTOSTART: Resetting drive 8
-AUTOSTART: Resetting the machine to autostart 'MAIN'
-VIC-II: VSP Bug: safe channels are: 0357. Emulation of memory corruption is disabled.
+AUTOSTART: Resetting the machine to autostart 'JOYSTICKSPRITE'
+VIC-II: VSP Bug: safe channels are: 12346. Emulation of memory corruption is disabled.
 AUTOSTART: Turning Warp mode on.
-AUTOSTART: `C:\Users\Seb\Documents\C64\Tutorials\Joystick01/bin/main.prg' recognized as program/p00 file.
+AUTOSTART: `C:\Users\Seb\Documents\C64\Tutorials\Joystick01/bin/joystickSprite.prg' recognized as program/p00 file.
 Monitor playback command: al C:2 .DOWN
-Monitor playback command: al C:849 .checkJoy2_LEFT
+Monitor playback command: al C:863 .checkJoy2_LEFT
 Monitor playback command: al C:80b .upstartEnd
 Monitor playback command: al C:80e .main
-Monitor playback command: al C:87b .joy2_FIRE
+Monitor playback command: al C:887 .joy2_FIRE
 Monitor playback command: al C:d020 .SCREEN_BORDER_COLOUR
-Monitor playback command: al C:844 .joy2_DOWN
+Monitor playback command: al C:860 .joy2_DOWN
 Monitor playback command: al C:10 .FIRE
-Monitor playback command: al C:821 .checkJoy2_UP
+Monitor playback command: al C:849 .checkJoy2_UP
 Monitor playback command: al C:8 .RIGHT
-Monitor playback command: al C:835 .checkJoy2_DOWN
+Monitor playback command: al C:856 .checkJoy2_DOWN
 Monitor playback command: al C:1 .UP
-Monitor playback command: al C:817 .readJoystick_2
-Monitor playback command: al C:830 .joy2_UP
+Monitor playback command: al C:83f .readJoystick_2
+Monitor playback command: al C:853 .joy2_UP
 Monitor playback command: al C:4 .LEFT
 Monitor playback command: al C:7f .JOYSTICK_2_IDLE
-Monitor playback command: al C:86c .joy2_RIGHT
+Monitor playback command: al C:87a .joy2_RIGHT
 Monitor playback command: al C:e544 .SCREEN_CLEAR
-Monitor playback command: al C:87e .doneReadJoystick_2
-Monitor playback command: al C:821 .joy2_IDLE
-Monitor playback command: al C:871 .checkJoy2_FIRE
+Monitor playback command: al C:88a .doneReadJoystick_2
+Monitor playback command: al C:849 .joy2_IDLE
+Monitor playback command: al C:87d .checkJoy2_FIRE
 Monitor playback command: al C:dc00 .JOYSTICK_2
-Monitor playback command: al C:858 .joy2_LEFT
+Monitor playback command: al C:86d .joy2_LEFT
 Monitor playback command: al C:400 .SCREEN_RAM
-Monitor playback command: al C:85d .checkJoy2_RIGHT
-Monitor playback command: al C:811 .gameLoop
-Closed monitor command playback file: C:\Users\Seb\Documents\C64\Tutorials\Joystick01/bin/main.vs
+Monitor playback command: al C:870 .checkJoy2_RIGHT
+Monitor playback command: al C:839 .gameLoop
+Closed monitor command playback file: C:\Users\Seb\Documents\C64\Tutorials\Joystick01/bin/joystickSprite.vs
 Main CPU: RESET.
 Sound: Opened device `dx', speed 48000Hz, fragment size 2.67ms, buffer size 32.00ms
 Sound: reSID: MOS8580, filter on, sampling rate 48000Hz - resampling, pass to 21600Hz
@@ -126,8 +126,8 @@ VSync: Sync reset
 Unit 8: RESET.
 Monitor UI: 'C64 Pro*' font found, enabling PETSCII output.
 Monitor UI: using font 'C64 Pro Mono 9' (Family:C64 Pro Mono, Size:9, Variations:-) PETSCII:yes Terminal Scale:1.000000
-AUTOSTART: Loading program 'MAIN'
-AUTOSTART: Entered ROM at $e5d4
+AUTOSTART: Loading program 'JOYSTICKSPRITE'
+AUTOSTART: Entered ROM at $e5d1
 AUTOSTART: Searching for ...
 AUTOSTART: Loading
 AUTOSTART: Entered ROM at $ea21
@@ -148,7 +148,7 @@ Configure Flags:
 --enable-option-checking=fatal --enable-gtk3ui --disable-arch --disable-pdf-docs --enable-catweasel --enable-cpuhistory --enable-ethernet --enable-midi --enable-parsid --with-flac --with-gif --with-lame --with-libcurl --with-libieee1284 --with-mpg123 --with-png --with-portaudio --with-unzip-bin --with-vorbis
 
 Resources with non default values:
-LogFileName="C:\Users\Seb\Documents\C64\Tutorials\Joystick01/bin/main_ViceLog.txt"
+LogFileName="C:\Users\Seb\Documents\C64\Tutorials\Joystick01/bin/joystickSprite_ViceLog.txt"
 MonitorFont="C64 Pro Mono 9"
 Window0Height=642
 Window0Width=720
@@ -156,11 +156,11 @@ Window0Xpos=608
 Window0Ypos=213
 
 reconstructed commandline options (might be incomplete):
--default -logfile "C:\Users\Seb\Documents\C64\Tutorials\Joystick01/bin/main_ViceLog.txt" -monitorfont "C64 Pro Mono 9" -windowxpos "608" -windowypos "213" -windowwidth "720" -windowheight "642"
+-default -logfile "C:\Users\Seb\Documents\C64\Tutorials\Joystick01/bin/joystickSprite_ViceLog.txt" -monitorfont "C64 Pro Mono 9" -windowxpos "608" -windowypos "213" -windowwidth "720" -windowheight "642"
 
 Mainlock: VICE thread initiating shutdown
 Mainlock: VICE thread is exiting
 Main: VICE thread has been joined.
-VIC-II: VSP Bug: safe channels are: 0135. Emulation of memory corruption is disabled.
+VIC-II: VSP Bug: safe channels are: 023567. Emulation of memory corruption is disabled.
 Sound: Closing device `dx'
 Hotkeys: shutting down.

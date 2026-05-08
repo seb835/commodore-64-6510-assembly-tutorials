@@ -17,6 +17,30 @@ BasicUpstart2(main)
 main:
 	jsr SCREEN_CLEAR // Clear the C64 screen
 
+	lda #150
+	sta $d000	// X position of sprite 0
+
+	lda #100
+	sta $d001	// Y position of sprite 0
+
+	lda #LIGHT_RED
+	sta $d027	// Sprite 0 colour
+
+	lda #BLACK
+	sta $d025	// Sprite extra colour 1
+
+	lda #WHITE
+	sta $d026	// Sprite extra colour 2
+
+	lda #$80
+	sta $07f8	// Sprite 0 sprite pointer index
+
+	lda #%00000001	// Enable multicolour for sprite 0
+	sta $d01c
+
+	lda #%00000001	// Enable sprite 0
+	sta $d015
+
 gameLoop:
 	jsr readJoystick_2
 	jmp gameLoop
@@ -33,45 +57,33 @@ readJoystick_2:
 			lda JOYSTICK_2
 			and #UP
 			beq joy2_UP
-				lda #32 // Blank character
-				sta SCREEN_RAM + 0
 				jmp checkJoy2_DOWN
 			joy2_UP:
-				lda #21 // U character
-				sta SCREEN_RAM + 0
+				dec $d001
 
 		checkJoy2_DOWN:
 			lda JOYSTICK_2
 			and #DOWN
 			beq joy2_DOWN
-				lda #32 // Blank character
-				sta SCREEN_RAM + 1
 				jmp checkJoy2_LEFT
 			joy2_DOWN:
-				lda #4 // D character
-				sta SCREEN_RAM + 1
+				inc $d001
 
 		checkJoy2_LEFT:
 			lda JOYSTICK_2
 			and #LEFT
 			beq joy2_LEFT
-				lda #32 // Blank character
-				sta SCREEN_RAM + 2
 				jmp checkJoy2_RIGHT
 			joy2_LEFT:
-				lda #12 // L character
-				sta SCREEN_RAM + 2
+				dec $d000
 
 		checkJoy2_RIGHT:
 			lda JOYSTICK_2
 			and #RIGHT
 			beq joy2_RIGHT
-				lda #32 // Blank character
-				sta SCREEN_RAM + 3
 				jmp checkJoy2_FIRE
 			joy2_RIGHT:
-				lda #18 // R character
-				sta SCREEN_RAM + 3
+				inc $d000
 
 		checkJoy2_FIRE:
 			lda JOYSTICK_2
@@ -83,3 +95,6 @@ readJoystick_2:
 
 doneReadJoystick_2:
 	rts
+
+*=$2000
+.import binary "computerFace.bin"
