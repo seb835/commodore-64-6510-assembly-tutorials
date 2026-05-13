@@ -4,5 +4,5 @@
 main:
 
 gameLoop:
-	in $d020
+	inc $d020
 	jmp gameLoop
