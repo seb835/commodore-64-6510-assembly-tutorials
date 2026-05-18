@@ -9,6 +9,7 @@ main:
 
 gameSetup:
 
+	/* Manual char positioning method
 	ldx #24 // Position at row number
 
 	lda Row_LO,x
@@ -28,6 +29,9 @@ gameSetup:
 
 	lda #WHITE
 	sta (ZP_ROW_COLOR_LO),y
+	*/
+
+	DrawChar(2,5,7,YELLOW)
 
 
 gameLoop:
