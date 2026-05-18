@@ -41,7 +41,7 @@ TILE:
 		pha
 
 		lda tileRow
-		asl
+		asl // Asymmetric shift left (multiple by 2)
 		tax
 
 		lda Row_LO,x
@@ -84,7 +84,7 @@ TILE:
 		inx
 		tya
 		clc
-		adc #SCREEN_WIDTH - 1
+		adc #SCREEN_WIDTH - 1 // i.e. the bottom left of the tile
 		tay
 
 		lda TILESET_ADDRESS,x
