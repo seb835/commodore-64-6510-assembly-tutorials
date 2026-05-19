@@ -31,3 +31,6 @@ BasicUpstart2(main)
 
 *=LIBRARIES_ADDRESS "Libraries"
 #import "/includes/libraries.asm"
+
+*=ROOMS_ADDRESS "Rooms"
+.import binary "/rooms/rooms.bin"

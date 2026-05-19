@@ -37,7 +37,8 @@ SYSTEM:
 
 		jsr SCREEN_CLEAR
 
-		jsr INTERRUPT.setupRasterInterrupt
+		//jsr INTERRUPT.setupRasterInterrupt
+
 		rts
 
 	delay:
