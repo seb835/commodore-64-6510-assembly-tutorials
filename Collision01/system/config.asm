@@ -1,0 +1,17 @@
+
+// --------------- Config ---------------
+
+// Screen:
+.label SCREEN_WIDTH = 40 // Cols
+.label SCREEN_HEIGHT = 25 // Rows
+.label SCREEN_SIZE = SCREEN_WIDTH * SCREEN_HEIGHT
+
+.label DEFAULT_SCREEN_BORDER_COLOR = BLACK
+.label DEFAULT_SCREEN_BACKGROUND_COLOR = BLACK
+.label DEFAULT_SCREEN_EXTRA_COLOR_1 = LIGHT_BLUE
+.label DEFAULT_SCREEN_EXTRA_COLOR_2 = BROWN
+
+// Rooms:
+.label ROOM_WIDTH = 16 // Tiles
+.label ROOM_HEIGHT = 12 // Tiles
+.label ROOM_SIZE = ROOM_WIDTH * ROOM_HEIGHT
