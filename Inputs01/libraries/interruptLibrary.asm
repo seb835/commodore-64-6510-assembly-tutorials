@@ -52,16 +52,7 @@ INTERRUPT:
 		ora #%00000001 							// Acknowledge raster interrupt
 		sta INTERRUPT_STATUS
 
-		lda #LIGHT_GREEN
-		sta SCREEN_BORDER_COLOR
-
-		ldx#0
-		delayLoop:
-			inx
-			bne delayLoop
-
-		lda #BLACK
-		sta SCREEN_BORDER_COLOR
-
+		jsr SPRITE.updateSprite_X_Y
+		
 		jmp INTERRUPT_RETURN					// KERNAL interrupt return routine
 }

@@ -2,22 +2,14 @@
 // --------------- Config ---------------
 
 // Screen:
-.label SCREEN_WIDTH = 40
-.label SCREEN_HEIGHT = 25
+.label SCREEN_WIDTH = 40 // Cols
+.label SCREEN_HEIGHT = 25 // Rows
 .label SCREEN_SIZE = SCREEN_WIDTH * SCREEN_HEIGHT
 
 .label DEFAULT_SCREEN_BORDER_COLOR = BLACK
 .label DEFAULT_SCREEN_BACKGROUND_COLOR = BLACK
 .label DEFAULT_SCREEN_EXTRA_COLOR_1 = LIGHT_BLUE
 .label DEFAULT_SCREEN_EXTRA_COLOR_2 = BROWN
-
-// Sprites:
-.label MAX_NUMBER_OF_SPRITES = 4
-
-.label DEFAULT_SPRITE_EXTRA_COLOR_1 = BLACK
-.label DEFAULT_SPRITE_EXTRA_COLOR_2 = WHITE
-
-.label BLANK_SPRITE = 79
 
 // Rooms:
 .label ROOM_WIDTH = 16 // Tiles

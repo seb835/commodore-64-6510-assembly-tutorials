@@ -6,3 +6,5 @@
 #import "/constants/systemConstants.asm"
 #import "/constants/zeroPageConstants.asm"
 #import "/constants/spriteConstants.asm"
+#import "/constants/inputConstants.asm"
+#import "/constants/directions.asm"

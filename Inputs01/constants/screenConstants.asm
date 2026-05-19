@@ -14,5 +14,3 @@
 .label SCREEN_EXTRA_COLOR_2 = $d023
 
 .label SCREEN_CLEAR = $e544
-
-.label SCREEN_RAM_HIGH_BYTE = $0288
