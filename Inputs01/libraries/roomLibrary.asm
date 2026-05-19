@@ -43,7 +43,7 @@ ROOM:
 			stx tileRow
 			cpx #ROOM_HEIGHT
 			bne loadRoomRow
-
+		
 		pla
 		tay
 		pla

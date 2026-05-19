@@ -8,14 +8,14 @@ main:
 	jsr SYSTEM.setup
 
 gameSetup:
-
+	
 	// Load room
 	lda #14
 	sta roomNr
 	jsr ROOM.load
 
-	// Initialise sprite
-	ldx #0
+	// Initialise player
+	ldx #0 // Sprite 0
 
 	lda #100
 	sta Sprite_X_Pos,x
@@ -26,7 +26,7 @@ gameSetup:
 	sta Sprite_H_Speed,x
 
 	lda #%00000001 // Enable multicolour for sprite 0
-	sta SPRITE_MULTICOLOR
+	sta SPRITE_MULTICOLOR // $d01c
 
 	lda #BLACK
 	sta SPRITE_EXTRA_COLOR_1 // $d025

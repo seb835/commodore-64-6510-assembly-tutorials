@@ -17,7 +17,6 @@
 
 .macro DrawTile(tile,row,col)
 {
-
 	lda #tile
 	sta tileNr
 	lda #row
